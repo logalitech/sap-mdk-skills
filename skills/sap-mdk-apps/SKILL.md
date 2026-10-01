@@ -201,11 +201,12 @@ When changing an MDK app:
 
 ## Where to Look
 
-| Need                                        | Source                                                                                                                                                           |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| a control's properties, any schema question | the `mdk-docs` tool of SAP's MDK MCP server (`@sap/mdk-mcp-server`), or the MDK schemadoc on help.sap.com, whose "Latest" can be newer than the project's schema |
-| what a proxy offers in a rule               | the project's `.typings/IClientAPI.d.ts`                                                                                                                         |
-| a working ClientAPI call to copy            | the rules SAP's templates generate in `Rules/Application/` and `Rules/Logging/`                                                                                  |
+- A control's properties or any schema question: the `mdk-docs` tool of SAP's MDK MCP server
+  (`@sap/mdk-mcp-server`), or the MDK schemadoc on help.sap.com, whose "Latest" can be newer than
+  the project's schema.
+- What a proxy offers in a rule: the project's `.typings/IClientAPI.d.ts`.
+- A working ClientAPI call to copy: the rules SAP's templates generate in `Rules/Application/` and
+  `Rules/Logging/`.
 
 ---
 

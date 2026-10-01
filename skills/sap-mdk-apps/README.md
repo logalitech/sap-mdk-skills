@@ -8,7 +8,7 @@ project, the metadata syntax, and the rules that prevent common failures on iOS,
 Install it with the [skills CLI](https://github.com/vercel-labs/skills):
 
 ```bash
-npx skills add logalitech/sap-mdk-skills --skill sap-mdk-apps
+npx skills@1.7.0 add logalitech/sap-mdk-skills --skill sap-mdk-apps
 ```
 
 ## Usage
