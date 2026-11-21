@@ -96,7 +96,8 @@ In a rule the same formatting is `clientAPI.formatCurrency`, `formatDate`, `form
 
 1. `validate` checks the metadata against `_SchemaVersion`. It never compiles `Styles.less`.
 2. Deploy bundles the project, which compiles the styles, uploads it to Mobile Services and reports the new revision number.
-3. The client checks for a new revision when the app returns to the foreground, or when an
+3. The client checks for a new revision when the app returns to the foreground (not on every
+   resume), or when an
    `ApplicationUpdate` action runs. `OnWillUpdate` runs before the update is applied; in a project generated from SAP's templates, that event is what shows the `New Version Available!` prompt.
 4. Only the device proves the change: a page can validate, bundle and deploy, then render nothing on a given client.
 
